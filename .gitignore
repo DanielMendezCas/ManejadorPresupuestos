@@ -1,0 +1,60 @@
+###################
+# Visual Studio #
+###################
+.vs/
+*.suo
+*.user
+*.cache
+*.sln.docstates
+*.ncrunchsolution
+*.dotCover
+
+###################
+# Build results #
+###################
+bin/
+obj/
+TestResults/
+*.pdb
+*.exe
+*.dll
+*.dll.config
+
+##################
+# NuGet Packages #
+##################
+# Excluir paquetes descargados de NuGet, pero no el archivo de configuración.
+packages/
+!packages/repositories.config
+
+###################
+# User-specific #
+###################
+*.userosscache
+*.sln.ide
+*.swp
+*.sqlite
+
+######################
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+###################
+# Web publish logs #
+###################
+*.Publish.xml
+
+#################
+# Logs #
+#################
+*.log
+
+#################
+# IDEs #
+#################
+.vscode/
+.idea/
