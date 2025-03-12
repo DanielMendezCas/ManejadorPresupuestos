@@ -1,0 +1,22 @@
+﻿@model AccountType
+@{
+    ViewData["Title"] = "Registrar Tipo de Cuenta";
+}
+
+<h1>Registrar Tipo de Cuenta</h1>
+<h5>Ejemplos: Préstamos, tarjetas de crédito, etc.</h5>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<form asp-action="Create">
+    <div class="mb-3">
+        <label asp-for="AccountName" class="form-label">Nombre</label>
+        <input type="text" asp-for="AccountName" class="form-control" />
+        <span asp-validation-for="AccountName" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

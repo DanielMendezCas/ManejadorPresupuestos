@@ -1,60 +1,39 @@
-###################
-# Visual Studio #
-###################
-.vs/
-*.suo
-*.user
-*.cache
-*.sln.docstates
-*.ncrunchsolution
-*.dotCover
-
-###################
-# Build results #
-###################
+# Archivos de compilación
 bin/
 obj/
-TestResults/
-*.pdb
-*.exe
-*.dll
-*.dll.config
 
-##################
-# NuGet Packages #
-##################
-# Excluir paquetes descargados de NuGet, pero no el archivo de configuración.
-packages/
-!packages/repositories.config
+# Configuración de usuario
+*.user
+*.suo
+.vscode/
+.vs/
+launchSettings.json
 
-###################
-# User-specific #
-###################
-*.userosscache
-*.sln.ide
-*.swp
-*.sqlite
-
-######################
-# OS generated files #
-######################
+# Archivos temporales y de caché
+*.tmp
+*.log
+npm-debug.log
 .DS_Store
-ehthumbs.db
-Icon?
 Thumbs.db
 
-###################
-# Web publish logs #
-###################
-*.Publish.xml
+# Paquetes de NuGet
+*.nupkg
+packages/
+project.lock.json
 
-#################
-# Logs #
-#################
-*.log
+# Archivos de publicación
+publish/
+out/
 
-#################
-# IDEs #
-#################
-.vscode/
-.idea/
+# Configuración local
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# Configuración de entorno Docker (si usas Docker)
+.dockerignore
+Dockerfile
+
+# Ignorar todos los archivos de configuración excepto el appsettings.json principal
+appsettings.*.json
+!appsettings.json
